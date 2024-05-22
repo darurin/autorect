@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <div class="row">
+        <label for="xCoordinate">X coordinate:</label>
+        <input type="number" name="X" id="xCoordinate" placeholder="X Coordinate" required>
+        <label for="yCoordinate">Y coordinate:</label>
+        <input type="number" name="Y" id="yCoordinate" placeholder="Y Coordinate" required>
+    </div>
+    <div class="row">
+        <label for="numWidth">Width:</label>
+        <input type="number" name="Width" id="numWidth" placeholder="Width" required>
+        <label for="numHeight">Height:</label>
+        <input type="number" name="Height" id="numHeight" placeholder="Height" required>
+    </div>
+    <div class="row">
+        <label for="drawMode">Draw Mode:</label>
+        <select id="drawMode">
+            <option value="fill">Fill</option>
+            <option value="stroke">Stroke</option>
+        </select>
+        <label for="color">Color:</label>
+        <input type="color" id="color" value="#000000">
+    </div>
+    <div class="row">
+        <label for="strokeWidth">Stroke Width:</label>
+        <input type="number" name="Stroke Width" id="strokeWidth" placeholder="Stroke Width" value="" required>
+    </div>
+    <button type="button" onclick="drawRectangle()">Draw Rectangle</button>
+    <button type="button" onclick="clearRectangle()">Clear Rectangle</button>
+
+    <canvas id="myCanvas" width="800" height="600"></canvas>
+</body>
+</html>
